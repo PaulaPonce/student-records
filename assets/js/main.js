@@ -1,6 +1,5 @@
 var arreglo = [];
 
-
 function addStudent(nombreCampo){
 	var campo = "";
 	do{
@@ -26,6 +25,9 @@ function ingreso(){
 
 	var alumnoAux = new Student(arreglo.length,elNombre,losPuntos,laVida);
 	arreglo.push(alumnoAux);
+
+	document.getElementById("impresion-student").innerHTML += "<br><b>Los datos del estudiante son:</b> <br><br>" + elNombre + "<br> Tech Skills: " + losPuntos + "<br> Life Points: " + laVida + "<br>Status: Active<br><br>";
+
 }
 
 
@@ -33,7 +35,7 @@ function ingreso(){
 
 function printAll(){
 	arreglo.forEach(function(cv){
-		document.getElementById("impresion-student").innerHTML += cv.nombre +"<br>" + "Tech Skills :" + cv.points+"<br>" + "Life Skills : "+cv.life+"<br>" + "Status: " +cv.status + "<br><br>";
+		document.getElementById("impresion-student").innerHTML += cv.nombre +"<br>" + "Tech Skills :" + cv.points+"<br>" + "Life Skills : "+cv.life+"<br>" + "Status: Active" + "<br><br>";
 	});
 }
 
@@ -41,4 +43,6 @@ function printAll(){
 
 
 
-	
+
+
+
