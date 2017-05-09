@@ -9,10 +9,6 @@ function addStudent(nombreCampo){
 var campos = ["Nombre Estudiante", "Porcentaje Técnico", "Porcentaje Habilidades Socio-Emocionales"];
 var respuestas = [];
 
-for (var i = 0; i < campos.length ; i++) {
-	respuestas[i] = addStudent(campos[i])
-}
-
 campos.forEach(function(el){
 	respuestas.push(addStudent(el));
 })
