@@ -26,8 +26,13 @@ function ingreso(){
 	var alumnoAux = new Student(arreglo.length,elNombre,losPuntos,laVida);
 	arreglo.push(alumnoAux);
 
-	document.getElementById("impresion-student").innerHTML += "<br><b>Los datos del estudiante son:</b> <br><br>" + elNombre + "<br> Tech Skills: " + losPuntos + "<br> Life Points: " + laVida + "<br>Status: Active<br><br>";
+	imprimeRapido(elNombre,losPuntos,laVida);
+}
 
+
+
+function imprimeRapido(elNombre,losPuntos,laVida){
+	document.getElementById("impresion-student").innerHTML = "<br><b>Los datos del estudiante son:</b> <br><br>" + elNombre + "<br> Tech Skills: " + losPuntos + "<br> Life Points: " + laVida + "<br>Status: Active<br><br>";
 }
 
 
@@ -35,7 +40,9 @@ function ingreso(){
 
 function printAll(){
 	arreglo.forEach(function(cv){
-		document.getElementById("impresion-student").innerHTML += cv.nombre +"<br>" + "Tech Skills :" + cv.points+"<br>" + "Life Skills : "+cv.life+"<br>" + "Status: Active" + "<br><br>";
+		document.getElementById("impresion-student").innerHTML = " "; 
+		document.getElementById("impresion-titulo").innerHTML = "<br><b>Los datos de los estudiantes son:</b> <br><br>";			
+		document.getElementById("impresion-todos").innerHTML += cv.nombre +"<br>" + "Tech Skills :" + cv.points+"<br>" + "Life Skills : "+cv.life+"<br>" + "Status: Active" + "<br><br>";
 	});
 }
 

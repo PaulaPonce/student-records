@@ -1,1 +1,39 @@
+body {
+    background-color: #CCF7F2 ;
+    font-weight: 300;    
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+h1 {
+    color: #6BB6AD;
+    font-weight: 300;    
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
+#impresion-student{
+	color: #6BB6AD;
+}
+
+#impresion-titulo{
+	color: #6BB6AD;
+	font-weight: 300;
+}
+
+#impresion-todos{
+	color: #6BB6AD;
+}
+
+
+a:link, a:visited {
+	background-color: #fefefe;
+	width: 5%;
+	margin: 0 auto;
+	height: 5px;
+	padding: 5px;
+	font-weight: 400;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #3A8980;
+}
+a:hover, a:active {
+	background-color: #E8E8E8;
+}
