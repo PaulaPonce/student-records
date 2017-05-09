@@ -9,12 +9,17 @@ function Student(nombre,points,life){
 	this.status = 'Active';
 }
 
+function ingreso(){
+	var alumnoAux = new Student(arreglo.length,elNombre,losPuntos,laVida);
+	arreglo.push(alumnoAux);
+}
 
 
 
 
 function printAll(){
 	arreglo.forEach(function(cv){
-		document.getElementById("impresion-student").innerHTML+=cv.nombre+"<br>"+cv.points+"<br>"+cv.life+"<br>"+cv.status
+		document.getElementById("impresion-student").innerHTML+= cv.nombre+"<br>"+ "Tech Skills :" + cv.points+"<br>"+ "Life Skills : "+cv.life+"<br>"+ "Status: " +cv.status;
 	})
-}
+
+
